@@ -2,6 +2,36 @@ import React, { useState } from 'react';
 import { Smartphone, Laptop, Tv, Gamepad2 } from 'lucide-react';
 
 const Home = () => {
+  return (
+    <div className="min-h-screen bg-slate-900 text-slate-100">
+      <header className="bg-slate-800 shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="flex items-center">
+            <Microchip className="h-8 w-8 text-blue-500 mr-2" />
+            <span className="text-xl font-bold">TechFix Pro</span>
+          </div>
+          <nav className="hidden md:flex space-x-8">
+            <a href="/" className="hover:text-blue-500">Início</a>
+            <a href="/especialidades" className="hover:text-blue-500">Especialidades</a>
+            <a href="/diagnostico-avancado" className="hover:text-blue-500">Diagnóstico Avançado</a>
+            <a href="/rastrear-os" className="hover:text-blue-500">Rastrear O.S.</a>
+            <a href="/empresa" className="hover:text-blue-500">Empresa</a>
+            <a href="/contato" className="hover:text-blue-500">Contato</a>
+          </nav>
+          <div className="flex space-x-4">
+            <a href="/admin-login" className="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-md">Área do Cliente</a>
+            <a href="/admin" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md">Portal do Técnico/Admin</a>
+          </div>
+        </div>
+      </header>
+      <section className="container mx-auto px-4 py-16 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6">Engenharia de Precisão e Reparo Eletrônico Avançado</h1>
+        <p className="text-xl md:text-2xl mb-8">Laboratório com certificação antiestática (ESD), microscopia eletrônica e equipamentos de última geração</p>
+        <div className="flex justify-center space-x-4">
+          <a href="/contato" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-md">Agende uma Consulta</a>
+          <a href="/especialidades" className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-md">Nossas Especialidades</a>
+        </div>
+      </section>
   const [osNumber, setOsNumber] = useState('');
   const [orderStatus, setOrderStatus] = useState(null);
 

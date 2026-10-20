@@ -15,6 +15,11 @@ const App = () => {
         <Route path="/admin" component={Admin} />
         <Route path="/assistencia-tecnica" component={AssistenciaTecnica} />
         <Route path="/" component={Home} />
+        <Route path="/especialidades" component={Especialidades} />
+        <Route path="/diagnostico-avancado" component={DiagnosticoAvancado} />
+        <Route path="/rastrear-os" component={RastrearOS} />
+        <Route path="/empresa" component={Empresa} />
+        <Route path="/contato" component={Contact} />
         <Route path="/assistencia-tecnica" component={AssistenciaTecnica} />
         <Route path="/site-eletronica" component={SiteEletronica} />
         <Route path="/site-eletronica" component={SiteEletronica} />
