@@ -18,7 +18,7 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.username === 'admin' && formData.password === 'admin123') {
+    if ((formData.username === 'admin' && formData.password === 'admin123') || (formData.username === 'novo_usuario' && formData.password === 'nova_senha')) {
       // Verificar no banco de dados
       const response = await fetch('/api/admin/login', {
         method: 'POST',
