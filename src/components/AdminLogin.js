@@ -4,7 +4,19 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { KeyRound } from 'lucide-react';
 
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { KeyRound } from 'lucide-react';
+
 const AdminLogin = () => {
+  const history = useHistory();
+  const [formData, setFormData] = useState({
+    username: '',
+    password: ''
+  });
   const [formData, setFormData] = useState({
     username: '',
     password: ''
