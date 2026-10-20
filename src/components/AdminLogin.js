@@ -115,6 +115,7 @@ const AdminLogin = () => {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200 flex items-center justify-center"
                 >
                   <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="h-5 w-5 mr-2" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="h-5 w-5 mr-2" />
                   Entrar com o Google
                 </Button>
               </div>
