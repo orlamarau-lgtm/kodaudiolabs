@@ -14,18 +14,13 @@ const AdminLogin = () => {
     }));
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para autenticar o super admin
-    console.log(formData);
+    if (formData.username === 'superadmin' && formData.password === 'superadmin123') {
+      console.log('Login bem-sucedido');
+    } else {
+      console.log('Usuário ou senha incorretos');
+    }
   };
 
   return (
