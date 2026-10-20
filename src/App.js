@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/admin" component={Admin} />
         <Route path="/assistencia-tecnica" component={AssistenciaTecnica} />
         <Route path="/" component={Home} />
+        <Route path="/site-eletronica" component={SiteEletronica} />
       </Switch>
     </Router>
   );
