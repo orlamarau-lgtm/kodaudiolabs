@@ -3,8 +3,7 @@ import AdminLogin from '../components/AdminLogin';
 
 const Admin = () => {
   return (
-    <div>
-      <h1>Login Super Admin</h1>
+    <div className="min-h-screen bg-slate-900">
       <AdminLogin />
     </div>
   );
