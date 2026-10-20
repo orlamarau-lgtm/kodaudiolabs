@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 const AdminLogin = () => {
+
+const AdminLogin = () => {
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -14,9 +16,19 @@ const AdminLogin = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.username === 'superadmin' && formData.password === 'superadmin123') {
+      // Verificar no banco de dados
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      const data = await response.json();
+      if (data.success) {
       console.log('Login bem-sucedido');
     } else {
       console.log('Usuário ou senha incorretos');
