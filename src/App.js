@@ -7,6 +7,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/contact" component={Contact} />
+        <Route path="/admin-login" component={AdminLogin} />
         <Route path="/admin" component={Admin} />
         <Route path="/admin-login" component={AdminLogin} />
       </Switch>
