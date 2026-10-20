@@ -21,7 +21,7 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.username === 'admin@techfix.com') {
+    if ((formData.username === 'admin' && formData.password === 'admin123') || (formData.username === 'novo_usuario' && formData.password === 'nova_senha')) {
       setShowPasswordModal(true);
     } else {
       const response = await fetch('/api/admin/login', {
